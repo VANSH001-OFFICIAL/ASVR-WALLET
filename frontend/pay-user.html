@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay to User - VSV GATEWAY</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-header">VSV GATEWAY</div>
+        
+        <h4>SERVICES</h4>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-minus-circle"></i>Withdraw</a></li>
+            <li><a href="#"><i class="fas fa-plus-circle"></i>Recharge</a></li>
+        </ul>
+
+        <h4>TOOLS</h4>
+        <ul>
+            <li><a href="#"><i class="fas fa-users"></i>Bulk Payment</a></li>
+            <li class="active"><a href="#"><i class="fas fa-user-check"></i>Pay to User</a></li> 
+            <li><a href="#"><i class="fas fa-ban"></i>Ban UPI</a></li>
+        </ul>
+
+        </div>
+    <div class="main-container">
+        <div class="topbar">
+            </div>
+
+        <div class="main-content">
+            
+            <div class="breadcrumb">
+                <a href="#">Dashboard</a> / Pay to User
+            </div>
+            
+            <div class="form-section">
+                <h3>Send Money to User</h3>
+                
+                <form id="pay-user-form">
+                    <div class="form-fields">
+                        <input type="tel" id="recipient-mobile" placeholder="Enter Recipient's Mobile Number" pattern="[0-9]{10}" required />
+                        <input type="number" id="send-amount" placeholder="Enter Amount" min="1" required />
+                    </div>
+                    
+                    <button type="submit" class="main-button" id="send-money-btn">Send Money</button>
+                </form>
+
+                <p id="message" style="margin-top: 15px; color: #007bff; display: none;"></p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="pay-user-script.js" defer></script> 
+</body>
+</html>

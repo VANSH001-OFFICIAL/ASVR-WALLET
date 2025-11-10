@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSV GATEWAY - Withdraw</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-header">VSV GATEWAY</div>
+        
+        <h4>SERVICES</h4>
+        <ul>
+            <li><a href="#"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
+            <li class="active"><a href="#"><i class="fas fa-minus-circle"></i>Withdraw</a></li>
+            <li><a href="#"><i class="fas fa-plus-circle"></i>Recharge</a></li>
+        </ul>
+
+        <h4>TOOLS</h4>
+        <ul>
+            <li><a href="#"><i class="fas fa-users"></i>Bulk Payment</a></li>
+            <li><a href="#"><i class="fas fa-user-check"></i>Pay to User</a></li>
+            <li><a href="#"><i class="fas fa-ban"></i>Ban UPI</a></li>
+        </ul>
+
+        <h4>HISTORY</h4>
+        <ul>
+            <li><a href="#"><i class="fas fa-history"></i>Transaction History</a></li>
+        </ul>
+
+        <h4>API TOOL</h4>
+        <ul>
+            <li><a href="#"><i class="fas fa-key"></i>Api Settings</a></li>
+        </ul>
+
+        <h4>SUPPORTS</h4>
+        <ul>
+            <li><a href="#"><i class="fas fa-headset"></i>Contact Us</a></li>
+            <li><a href="#"><i class="fab fa-telegram-plane"></i>Join Channel</a></li>
+        </ul>
+    </div>
+    <div class="main-container">
+        <div class="topbar">
+            <div class="topbar-info">
+                <i class="fas fa-sun" style="color: #ffc107;"></i>
+                <span style="font-size: 1.2em; font-weight: bold; color: var(--primary-color);">₹ 13.07</span>
+                <div class="profile">
+                    <img src="" alt="Profile">
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            
+            <div class="breadcrumb">
+                <a href="#">Dashboard</a> / Withdraw
+            </div>
+            
+            <div class="form-section">
+                <h3>Withdraw Money</h3>
+                <div class="form-fields">
+                    <input type="number" id="amount" placeholder="Enter Amount" required />
+                    <input type="text" id="upi_id" placeholder="Enter UPI ID" required />
+                </div>
+                <button class="main-button" id="withdraw-btn">Withdraw</button>
+                <p id="message" style="margin-top: 15px; color: #dc3545; display: none;">Processing...</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - PayPortal</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2 class="auth-header">Create Your Account</h2>
+            
+            <form id="register-form">
+                
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" placeholder="Enter 10 digit mobile number" pattern="[0-9]{10}" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a strong password" required>
+                </div>
+
+                <button type="submit" class="main-button" id="register-btn">Register Now</button>
+            </form>
+
+            <p class="auth-footer">Already have an account? <a href="login.html">Login here</a></p>
+            <p id="message" style="margin-top: 15px; color: #dc3545; display: none;"></p>
+        </div>
+    </div>
+
+    <script src="register-script.js" defer></script> 
+</body>
+</html>
